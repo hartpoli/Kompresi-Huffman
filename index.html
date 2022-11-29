@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Huffman Coding</title>
+</head>
+<body>
+    <nav class="navbar navbar-color">
+        <div class="container-fluid">
+            <h1 class="title text-light">Huffman Coding</h1>
+        </div>
+    </nav>
+    
+    <aside>
+        <ul>
+            <li style="list-style:none;">Yunihart Poli</li>
+            <li style="list-style:none;">Ryval Onibala</li>
+            <li style="list-style:none;">Feraldy Sumendap</li>
+            <li style="list-style:none;">Aditya Makalow</li>
+            <li style="list-style:none;">Yovy Manoppo</li>
+        </ul>        
+    </aside>
+
+    <main>
+
+        <form>
+            <div class="input-group">
+                <span class="input-group-text">Input / Masukan</span>
+                <textarea id="input" class="form-control" rows="8" ></textarea>
+            </div>
+            
+            <span>
+               Ukuran Input: <span id="input-size">0</span> Bytes
+            </span>
+            <button type="button" class="btn btn-primary" id="encode-button">Encode</button>
+            <span>
+                Ukuran Output: <span id="output-size">0</span> Bytes
+            </span>
+
+            <div class="input-group">
+                <span class="input-group-text">Output / Hasil Binari</span>
+                <textarea id="output" class="form-control" rows="8" readonly></textarea>
+            </div>
+        </form>
+
+        <div id="container">
+            <a class="gambarhuffman"> Gambar Huffman </a>
+            <svg ><g></g> </svg>
+            <br>
+            <div id="table-wrapper">
+                <table>
+                    <thead>
+                        <td>Karakter</td>
+                        <td>Frekuensi</td>
+                        <td>Kode</td>
+                        <td>Panjang Bit</td>
+                    </thead>
+                    <tbody id="table">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    
+    </main>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="modal" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Error!</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">Input masih kosong!</div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">OK</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="https://dagrejs.github.io/project/dagre-d3/latest/dagre-d3.min.js"></script>
+    <script src="js/buckets.min.js"></script>
+    <script src="js/node.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
