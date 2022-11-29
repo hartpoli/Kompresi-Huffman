@@ -1,0 +1,103 @@
+.navbar {
+  background-color: #00DBDE;
+  background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);  
+}
+
+body{
+  background-color: #3EECAC;
+  background-image: linear-gradient(19deg, #3EECAC 0%, #EE74E1 100%);    
+}
+
+.gambarhuffman {
+  color: black;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: larger;
+  font-weight: bold;
+}
+
+.title {
+  width: 100%;
+  text-align: center;
+}
+
+main {
+  padding: 40px;
+  text-align: center;
+}
+
+form {
+  padding: 0 100px;
+  text-align: center;
+}
+
+#input, #output {
+  resize: none;
+}
+
+#encode-button {
+  margin: 20px;
+}
+
+#container {
+  margin-top: 50px;
+}
+
+#table-wrapper {
+  width: 100%;
+  padding-top: 50px;
+  text-align: center;
+  display: none;
+}
+
+table {
+  display: inline-block;
+}
+
+table td {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+/* SVG */
+svg {
+  width: 100%;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 20px;
+}
+
+.node rect,
+.node circle,
+.node ellipse {
+  stroke: rgb(34, 4, 4);
+  fill: rgb(255, 255, 255);
+  stroke-width: 1px;
+}
+
+#encode-button {
+  background-image: linear-gradient(20deg, #10b97b 0%, #be16ae 100%);    
+}
+
+.edgePath path {
+  stroke: #333;
+  fill: #333;
+  stroke-width: 1.5px;
+}
+
+aside {
+  max-height: 150px;
+  text-align: center;
+  font-size: x-large;
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  div.example {
+    font-size: 80px;
+  }
+}
