@@ -1,7 +1,7 @@
 # Kompresi-Huffman
 Project UAS Kompresi Huffman Code
 
-Huffman Coding
+## Huffman Coding
 This is a Huffman Coding implementation using HTML, CSS, and JavaScript. The project is a collaboration of Yunihart Poli, Ryval Onibala, Feraldy Sumendap, Aditya Makalow, and Yovy Manoppo.
 
 Usage
